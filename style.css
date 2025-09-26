@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #1f2937; /* Gray-800 */
+  background-color: #1f2937; 
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  background: #111827; /* Gray-900 */
+  background: #111827;
   padding: 30px;
   width: 350px;
   border-radius: 20px;
@@ -32,7 +32,7 @@ body {
   width: 100%;
   font-size: 3rem;
   text-align: end;
-  color: #d1d5db; /* Gray-300 */
+  color: #d1d5db; 
   word-wrap: break-word;
   word-break: break-all;
 }
@@ -65,18 +65,18 @@ button:hover {
 }
 
 .key-operate {
-  background: #14b8a6; /* Teal-500 */
+  background: #14b8a6; 
   color: #fff;
 }
 
 .key-others {
-  background: #374151; /* Gray-700 */
-  color: #e5e7eb; /* Gray-200 */
+  background: #374151; 
+  color: #e5e7eb; 
 }
 
 .numbers {
-  background: #1f2937; /* Gray-800 */
-  color: #f3f4f6; /* Gray-100 */
+  background: #1f2937; 
+  color: #f3f4f6;
 }
 
 button:active {
