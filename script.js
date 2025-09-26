@@ -2,7 +2,7 @@ const inputValue = document.getElementById("user-input");
 const number = document.querySelectorAll(".numbers");
 const calculate = document.querySelectorAll(".operations");
 
-// Handle button clicks
+
 number.forEach(function (item) {
   item.addEventListener("click", function (e) {
     if (inputValue.innerText === "NaN") {
@@ -21,7 +21,7 @@ calculate.forEach(function (item) {
   });
 });
 
-// Function for operations
+
 function handleOperation(key) {
   let lastValue = inputValue.innerText.slice(-1);
 
@@ -45,7 +45,7 @@ function handleOperation(key) {
   }
 }
 
-// --- Keyboard Support ---
+
 document.addEventListener("keydown", function (e) {
   const key = e.key;
 
@@ -57,7 +57,7 @@ document.addEventListener("keydown", function (e) {
     inputValue.innerText += key;
   }
 
-  // Operators
+
   if (["+", "-", "*", "/"].includes(key)) {
     let lastValue = inputValue.innerText.slice(-1);
     if (!["+", "-", "*", "/"].includes(lastValue)) {
@@ -65,18 +65,18 @@ document.addEventListener("keydown", function (e) {
     }
   }
 
-  // Enter → Evaluate
+ 
   if (key === "Enter") {
     e.preventDefault();
     handleOperation("=");
   }
 
-  // Backspace → Delete one digit
+ 
   if (key === "Backspace") {
     handleOperation("DEL");
   }
 
-  // Delete → Clear all
+
   if (key === "Delete") {
     handleOperation("AC");
   }
